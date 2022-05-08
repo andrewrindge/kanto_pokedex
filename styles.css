@@ -1,0 +1,188 @@
+/*
+  Name: Andrew Rindge
+  Date: May 2nd, 2022
+  Section: CSE 154 AJ TAs: Tara, Benjamin
+  This is the styles.css page for my Pokedex inspired website.
+  It styles both the initial page and the popups for each Pokemon.
+*/
+
+@font-face {
+  font-family: "Pokemon GB";
+  src: url("font/pokemongameboyfont.ttf");
+}
+
+body {
+  font-family: "Pokemon GB", sans-serif;
+  background-color: rgb(169, 209, 169);
+  color: rgb(57, 56, 56);
+}
+
+header, footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+header h1 {
+  text-decoration: underline;
+  text-shadow: 5px;
+}
+
+#pokecardcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.pokecard {
+  align-self: center;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(57, 56, 56);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(80, 80, 80, 0.4);
+  padding: 8px;
+  margin: 10px;
+}
+
+.pokecard > img {
+  width: 15vw;
+  height: 15vw;
+  opacity: 0.8;
+  image-rendering: pixelated;
+}
+
+.pokecard > p {
+  text-transform: capitalize;
+  font-size: 1.2vw;
+}
+
+.pokecard:hover > img {
+  opacity: 1;
+}
+
+#cardview {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: capitalize;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 50px;
+  background-color: white;
+  padding: 30px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(80, 80, 80, 0.4);
+}
+
+#cardview > button {
+  font-family: "Pokemon GB", sans-serif;
+  align-self: flex-start;
+}
+
+#cardview > h1 {
+  text-align: center;
+}
+
+#cardview > p {
+  text-align: left;
+  padding-left: 15px;
+}
+
+#cardview > img {
+  align-self: center;
+  width: 15vw;
+  height: 15vw;
+  image-rendering: pixelated;
+}
+
+.type {
+  padding: 5px;
+  width: 10vw;
+  padding-left: 10px;
+  text-align: center;
+  word-wrap: break-word;
+  box-shadow:
+    -3px 0 0 0 rgb(57, 56, 56),
+    3px 0 0 0 rgb(57, 56, 56),
+    0 -3px 0 0 rgb(57, 56, 56),
+    0 3px 0 0 rgb(57, 56, 56);
+}
+
+#bug {
+  background-color: #A6B91A;
+}
+
+#dragon {
+  background-color: #6F35FC;
+}
+
+#electric {
+  background-color: #F7D02C;
+}
+
+#fighting {
+  background-color: #C22E28;
+}
+
+#fire {
+  background-color: #EE8130;
+}
+
+#flying {
+  background-color: #A98FF3;
+}
+
+#ghost {
+  background-color: #735797;
+}
+
+#grass {
+  background-color: #7AC74C;
+}
+
+#ground {
+  background-color: #E2BF65;
+}
+
+#ice {
+  background-color: #96D9D6;
+}
+
+#normal {
+  background-color: #A8A77A;
+}
+
+#poison {
+  background-color: #A33EA1;
+}
+
+#psychic {
+  background-color: #F95587;
+}
+
+#rock {
+  background-color: #B6A136;
+}
+
+#water {
+  background-color: #6390F0;
+}
+
+/* The below class is not my code!
+  Credit for the visuallyhidden CSS class goes to csstricks.com.
+  Used as an alternative to display:none feature I was trying to
+  implement with flexbox.
+ */
+.visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}

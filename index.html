@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+  ***
+  Name: Andrew Rindge
+  Date: May 2nd, 2022
+  Section: CSE 154 AJ TAs: Tara, Benjamin
+
+  This is the index.html page for my webpage that is designed to
+  function like a PokeDex for the original 151 Pokemon. All resources
+  are from PokeApi.
+  ***
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Kanto Pok&eacute;Dex</title>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Kanto Pok&eacute;Dex</h1>
+      <p>Explore the original 151 Pok&eacute;mon!</p>
+    </header>
+    <section id="pokecardcontainer"></section>
+    <section id="pokemoninfo" class="visuallyhidden">
+      <section id="cardview">
+        <button id="back-btn">&lt; Back</button>
+        <h2 id="name">name</h2>
+        <img id="pic" src="imgs/pokemonlogo.png" alt="Pokemon logo">
+        <p class="type">types</p>
+      </section>
+    </section>
+    <footer>
+      <p>
+        All Pok&eacute;mon content &copy; Nintendo, Game Freak, and The Pok&eacute;mon Company.
+      </p>
+      <p>
+        All Pok&eacute;mon information and sprites taken from Pok&eacute;API!
+      </p>
+    </footer>
+  </body>
+</html>
